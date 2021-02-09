@@ -1,15 +1,15 @@
-=== bS5 Cookie Consent ===
+=== bS5 Preloader ===
 
 Contributors: craftwerk
 
 Requires at least: 4.5
 Tested up to: 5.3.2
 Requires PHP: 5.6
-Stable tag: 5.0.0
+Stable tag: 5.0.0.1
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Cookie Consent by Klaus Hartl, MIT License https://github.com/js-cookie/js-cookie Plugin for WordPress, Copyright 2020 Bastian Kreiter.
+This plugin adds a preloader to bootScore 5 theme, Copyright 2021 Bastian Kreiter.
 
 
 == Installation ==
@@ -21,18 +21,19 @@ Cookie Consent by Klaus Hartl, MIT License https://github.com/js-cookie/js-cooki
 
 == Usage ==
 
-Use it in your HTML like this:
+Read documentation https://bootscore.me/documentation/preloader/
 
-<div data-aos="fade-up"></div>
 
 
 == Changelog ==
+
+    = 5.0.0.1 - February 09 2021 =
+    
+        * [SEO] Load CSS inline to reduce file request
+        * [SEO] Load preloader.js in footer
 
     = 5.0.0 - December 30 2020 =
     
         * Initial release
         
         
-== Credits ==
-
-* Cookie Consent Script by Klaus Hartl, MIT License https://github.com/js-cookie/js-cookie

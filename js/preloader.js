@@ -19,6 +19,8 @@ jQuery(document).ready(function ($) {
     // Preloader fade in page transition
     $('a:not([href^=\\#]):not([target="_blank"]):not([href^="mailto:"]):not([href="javascript:void(0)"]):not(.add_to_cart_button):not(.blocks-gallery-item a)').click(function () {
         $("#preloader").fadeIn('fast');
+        //$('#status').fadeIn('slow');
+        $('#preloader').delay(350).fadeOut('slow');
     });
 
 });

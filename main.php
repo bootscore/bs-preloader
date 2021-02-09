@@ -1,8 +1,8 @@
 <?php
 /*Plugin Name: bS5 Preloader
-Plugin URI: https://bootscore.me/plugins/bs-cookie-consent/
+Plugin URI: https://bootscore.me/plugins/bs-preloader/
 Description: This plugin adds a preloader to bootScore 5
-Version: 5.0.0
+Version: 5.0.0.1
 Author: Bastian Kreiter
 Author URI: https://crftwrk.de
 License: GPLv2
@@ -12,16 +12,11 @@ License: GPLv2
 // Register Styles and Scripts
 function bs_preloader_scripts() {
 
-    wp_enqueue_script( 'preloader-js', plugins_url( '/js/preloader.js', __FILE__ ));
-
-    wp_register_style( 'preloader-css', plugins_url('/css/preloader.css', __FILE__) );
-        wp_enqueue_style( 'preloader-css' );
+    wp_enqueue_script( 'preloader-js', plugins_url( '/js/preloader.js' , __FILE__ ), array( 'jquery' ), '1.0', true );
         
         }
     
 add_action('wp_enqueue_scripts','bs_preloader_scripts');
-
-
 
 
 
@@ -34,6 +29,18 @@ function bs_header_preloader() {
                 <span class="sr-only">Loading...</span>
             </div>
         </div>
+
+        <style>
+            #preloader {
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 1070;
+                display: flex;
+                background-color: inherit;
+            }
+        </style>
 
 
     <?php
