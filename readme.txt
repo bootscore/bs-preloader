@@ -5,7 +5,7 @@ Contributors: craftwerk
 Requires at least: 4.5
 Tested up to: 5.3.2
 Requires PHP: 5.6
-Stable tag: 5.0.0.1
+Stable tag: 5.0.0.2
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -27,6 +27,10 @@ Read documentation https://bootscore.me/documentation/preloader/
 
 == Changelog ==
 
+    = 5.0.0.2 - February 10 2021 =
+    
+        * [NEW] Override template in child-theme 
+
     = 5.0.0.1 - February 09 2021 =
     
         * [SEO] Load CSS inline to reduce file request
@@ -35,5 +39,3 @@ Read documentation https://bootscore.me/documentation/preloader/
     = 5.0.0 - December 30 2020 =
     
         * Initial release
-        
-        
