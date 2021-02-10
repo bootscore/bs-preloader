@@ -24,9 +24,9 @@ add_action('wp_enqueue_scripts','bs_preloader_scripts');
  *
  * Locate the called template.
  * Search Order:
- * 1. /themes/theme/woocommerce-plugin-templates/$template_name
+ * 1. /themes/theme/bs5-preloader/$template_name
  * 2. /themes/theme/$template_name
- * 3. /plugins/woocommerce-plugin-templates/templates/$template_name.
+ * 3. /plugins/bs5-preloader/templates/$template_name.
  *
  * @since 1.0.0
  *
@@ -37,7 +37,7 @@ add_action('wp_enqueue_scripts','bs_preloader_scripts');
  */
 function bs_preloader_locate_template( $template_name, $template_path = '', $default_path = '' ) {
 
-	// Set variable to search in woocommerce-plugin-templates folder of theme.
+	// Set variable to search in bs5-preloader folder of theme.
 	if ( ! $template_path ) :
 		$template_path = 'bs5-preloader/';
 	endif;
