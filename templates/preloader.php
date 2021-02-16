@@ -18,15 +18,3 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Don't allow direct access
         <span class="sr-only">Loading...</span>
     </div>
 </div>
-
-<style>
-    #preloader {
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 1070;
-        display: flex;
-        background-color: inherit;
-    }
-</style>

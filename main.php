@@ -1,8 +1,8 @@
 <?php
 /*Plugin Name: bS5 Preloader
 Plugin URI: https://bootscore.me/plugins/bs5-preloader/
-Description: This plugin adds a preloader to bootScore 5
-Version: 5.0.0.2
+Description: This plugin adds a preloader to bootScore 5 (since bootScore 5.0.0.2)
+Version: 5.0.0.3
 Author: Bastian Kreiter
 Author URI: https://crftwrk.de
 License: GPLv2
@@ -13,8 +13,11 @@ License: GPLv2
 function bs_preloader_scripts() {
 
     wp_enqueue_script( 'preloader-js', plugins_url( '/js/preloader.js' , __FILE__ ), array( 'jquery' ), '1.0', true );
+    
+    wp_register_style( 'preloader-css', plugins_url('/css/preloader.css', __FILE__) );
+    wp_enqueue_style( 'preloader-css' );
         
-        }
+    }
     
 add_action('wp_enqueue_scripts','bs_preloader_scripts');
 

@@ -3,9 +3,9 @@
 Contributors: craftwerk
 
 Requires at least: 4.5
-Tested up to: 5.3.2
+Tested up to: 5.6
 Requires PHP: 5.6
-Stable tag: 5.0.0.2
+Stable tag: 5.0.0.3
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -21,11 +21,16 @@ This plugin adds a preloader to bootScore 5 theme, Copyright 2021 Bastian Kreite
 
 == Usage ==
 
-Read documentation https://bootscore.me/documentation/preloader/
+Read documentation https://bootscore.me/documentation/bs5-preloader/
 
+Override plugin template by creating a folder your-theme/bs5-preloader and paste a copy of preloader.php in plugin folder templates.
 
 
 == Changelog ==
+
+    = 5.0.0.3 - February 16 2021 =
+    
+        * [SEO] Load CSS in external file again
 
     = 5.0.0.2 - February 10 2021 =
     
