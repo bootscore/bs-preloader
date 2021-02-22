@@ -1,8 +1,8 @@
 <?php
 /*Plugin Name: bS5 Preloader
 Plugin URI: https://bootscore.me/plugins/bs5-preloader/
-Description: This plugin adds a preloader to bootScore 5 (since bootScore 5.0.0.2)
-Version: 5.0.0.3
+Description: This plugin adds a preloader to bootScore 5
+Version: 5.0.0.4
 Author: Bastian Kreiter
 Author URI: https://crftwrk.de
 License: GPLv2
