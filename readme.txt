@@ -3,9 +3,9 @@
 Contributors: craftwerk
 
 Requires at least: 4.5
-Tested up to: 5.6.2
+Tested up to: 5.7.2
 Requires PHP: 5.6
-Stable tag: 5.0.0.5
+Stable tag: 5.0.0.6
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -28,6 +28,10 @@ Override plugin template by creating a folder your-theme/bs5-preloader and paste
 
 == Changelog ==
 
+    = 5.0.0.6 - May 28 2021 =
+    
+        * [IMPROVEMENT] Hide on Internet Explorer
+        * [IMPROVEMENT] Fade out effect on click <a>...</a> for smooth page transition (works not on Mac Safari and all iOS Browsers)
 
     = 5.0.0.5 - March 08 2021 =
     

@@ -2,3 +2,11 @@
     display: flex;
     background-color: inherit;
 }
+
+/* Hide preloader on IE10+ */
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+    #preloader {
+        display: none;
+    }
+}
