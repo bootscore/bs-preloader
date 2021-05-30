@@ -11,9 +11,9 @@ jQuery(document).ready(function ($) {
     }, 1500);
 
     // Preloader fade in on click <a>...</a> for smooth page transition
-    $('a:not([href^=\\#]):not([target="_blank"]):not([href^="mailto:"]):not([href="javascript:void(0)"]):not(.add_to_cart_button):not(.blocks-gallery-item a)').click(function () {
+    $('a:not([href^=\\#]):not([target="_blank"]):not([href^="mailto:"]):not([href="javascript:void(0)"]):not(.add_to_cart_button):not(.blocks-gallery-item a):not(.dropdown-toggle):not([href="javascript:gaOptout()"]):not(.woocommerce-MyAccount-downloads-file)').click(function () {
         $("#preloader").fadeIn('fast');
-        $('#preloader').delay(450).fadeOut('slow');
+        $('#preloader').delay(1000).fadeOut('slow');
     });    
 
 });
