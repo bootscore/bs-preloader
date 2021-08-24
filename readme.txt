@@ -3,9 +3,9 @@
 Contributors: craftwerk
 
 Requires at least: 4.5
-Tested up to: 5.7.2
+Tested up to: 5.8
 Requires PHP: 5.6
-Stable tag: 5.0.0.8
+Stable tag: 5.0.0.7
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -27,10 +27,6 @@ Override plugin template by creating a folder your-theme/bs5-preloader and paste
 
 
 == Changelog ==
-
-    = 5.0.0.8 - June XX 2021 =
-    
-        * [BUGFIX] Exclude .comments-link from fade-out
 
     = 5.0.0.7 - May 30 2021 =
     
