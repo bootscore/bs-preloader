@@ -2,7 +2,7 @@
 /**
  * Preloader template.
  *
- * This template can be overriden by copying this file to your-theme/bs5-preloader/preloader.php
+ * This template can be overriden by copying this file to your-theme/bs-preloader-main/preloader.php
  *
  * @author 		Bastian Kreiter
  * @package 	bS5 Preloader
