@@ -1,7 +1,7 @@
 <?php
-/*Plugin Name: bS5 Preloader
+/*Plugin Name: bS Preloader
 Plugin URI: https://bootscore.me/plugins/bs5-preloader/
-Description: This plugin adds a preloader to bootScore 5
+Description: This plugin adds a preloader to bootScore
 Version: 5.0.0.8
 Author: Bastian Kreiter
 Author URI: https://crftwrk.de
@@ -27,9 +27,9 @@ add_action('wp_enqueue_scripts','bs_preloader_scripts');
  *
  * Locate the called template.
  * Search Order:
- * 1. /themes/theme/bs5-preloader/$template_name
+ * 1. /themes/theme/bs-preloader-main/$template_name
  * 2. /themes/theme/$template_name
- * 3. /plugins/bs5-preloader/templates/$template_name.
+ * 3. /plugins/bs-preloader-main/templates/$template_name.
  *
  * @since 1.0.0
  *
@@ -40,9 +40,9 @@ add_action('wp_enqueue_scripts','bs_preloader_scripts');
  */
 function bs_preloader_locate_template( $template_name, $template_path = '', $default_path = '' ) {
 
-	// Set variable to search in bs5-preloader folder of theme.
+	// Set variable to search in bs-preloader-main folder of theme.
 	if ( ! $template_path ) :
-		$template_path = 'bs5-preloader/';
+		$template_path = 'bs-preloader-main/';
 	endif;
 
 	// Set default plugin templates path.
