@@ -1,15 +1,15 @@
-=== bS5 Preloader ===
+=== bS Preloader ===
 
-Contributors: The bootScore Contributors
+Contributors: Bastian Kreiter
 
 Requires at least: 4.5
 Tested up to: 5.8
 Requires PHP: 5.6
 Stable tag: 5.0.0.8
 License: MIT License
-License URI: https://github.com/bootscore/bs5-preloader/blob/main/LICENSE
+License URI: https://github.com/bootscore/bs-preloader/blob/main/LICENSE
 
-This plugin adds a preloader to bootScore 5 theme, Copyright 2021 Bastian Kreiter.
+This plugin adds a preloader to bootScore theme, Copyright 2021 The bootScore Contributors.
 
 
 == Installation ==
