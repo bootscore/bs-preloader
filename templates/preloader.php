@@ -4,8 +4,8 @@
  *
  * This template can be overriden by copying this file to your-theme/bs-preloader-main/preloader.php
  *
- * @author 		Bastian Kreiter
- * @package 	bS5 Preloader
+ * @author 		bootScore
+ * @package 	bS Preloader
  * @version     1.0.0
  */
 
