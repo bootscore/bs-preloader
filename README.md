@@ -19,7 +19,7 @@ Template files can be found within the /bs-preloader-main/templates/ plugin dire
 
 Edit files in an upgrade-safe way using overrides. Copy the template into a directory within your theme named /bs-preloader-main keeping the same file structure but removing the /templates/ subdirectory. Path must be `/your-theme/bs-preloader-main/[file].php`.
 
-The copied file will now override the bS Preloader template file. Change cards, classes or HTML as you want.
+The copied file will now override the bS Preloader template file. Change spinner, classes or HTML as you want.
 
 ### Templates that can be overwritten:
 
