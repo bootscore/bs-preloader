@@ -1,6 +1,6 @@
 # bS Preloader
 
-WordPress plugin to show a preloader in bootScore theme. Content will be shown when the page is fully loaded. When clicking a link (not # and external url), the preloader fades in again (not working on Mac Safari and all iOS Browsers) to get a smooth transition between pages.
+WordPress plugin to show a preloader in bootScore theme. Content will be shown when the page is fully loaded. When clicking a link (not # and external url), the preloader fades in again (not working on Mac Safari and all iOS Browsers) to get a smooth page transition.
 
 Demo: https://bootscore.me/
 
