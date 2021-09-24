@@ -35,7 +35,7 @@ Override plugin template by creating a folder your-theme/bs-preloader-main and p
 
     = 5.0.1.0 - September 24 2021 =
     
-        * [BUGFIX] Prevent ctrl/cmd + click links from fade-out
+        * [BUGFIX] Prevent ctrl/cmd + click links from fade-in
         * [NEW] Added Update Checker
 
     = 5.0.0.8 - August 24 2021 =
