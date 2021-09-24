@@ -3,13 +3,18 @@
 Contributors: Bastian Kreiter
 
 Requires at least: 4.5
-Tested up to: 5.8
+Tested up to: 5.8.1
 Requires PHP: 5.6
-Stable tag: 5.0.0.8
+Stable tag: 5.0.1.0
 License: MIT License
 License URI: https://github.com/bootscore/bs-preloader/blob/main/LICENSE
 
 This plugin adds a preloader to bootScore theme, Copyright 2021 The bootScore Contributors.
+
+
+== Credits ==
+
+    - Update Checker https://github.com/YahnisElsts/plugin-update-checker/blob/master/license.txt, Copyright 2017, Jānis Elsts
 
 
 == Installation ==
@@ -21,13 +26,17 @@ This plugin adds a preloader to bootScore theme, Copyright 2021 The bootScore Co
 
 == Usage ==
 
-Read documentation https://bootscore.me/documentation/preloader/
+Read documentation https://bootscore.me/documentation/bs-preloader/
 
 Override plugin template by creating a folder your-theme/bs-preloader-main and paste a copy of preloader.php in plugin folder templates.
 
 
 == Changelog ==
 
+    = 5.0.1.0 - September 24 2021 =
+    
+        * [BUGFIX] Prevent ctrl/cmd + click links from fade-out
+        * [NEW] Added Update Checker
 
     = 5.0.0.8 - August 24 2021 =
     

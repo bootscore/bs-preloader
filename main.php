@@ -1,12 +1,20 @@
 <?php
 /*Plugin Name: bS Preloader
-Plugin URI: https://bootscore.me/plugins/bs5-preloader/
+Plugin URI: https://bootscore.me/plugins/bs-preloader/
 Description: This plugin adds a preloader to bootScore
-Version: 5.0.0.8
-Author: Bastian Kreiter
-Author URI: https://crftwrk.de
-License: GPLv2
+Version: 5.0.1.0
+Author: bootScore
+Author URI: https://bootscore.me
+License: MIT License
 */
+
+// Update checker
+require 'update/update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+	'https://bootscore.me/wp-content/plugins/bs-preloader-main/update/plugin.json',
+	__FILE__, //Full path to the main plugin file or functions.php.
+	'bs-preloader-main'
+);
 
 
 // Register Styles and Scripts
