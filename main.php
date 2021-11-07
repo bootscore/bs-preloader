@@ -2,7 +2,7 @@
 /*Plugin Name: bS Preloader
 Plugin URI: https://bootscore.me/plugins/bs-preloader/
 Description: This plugin adds a preloader to bootScore
-Version: 5.0.1.0
+Version: 5.0.1.1
 Author: bootScore
 Author URI: https://bootscore.me
 License: MIT License

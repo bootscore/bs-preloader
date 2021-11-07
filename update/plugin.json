@@ -1,8 +1,8 @@
  {
  	"name" : "bS Preloader",
- 	"version" : "5.0.1.0",
+ 	"version" : "5.0.1.1",
  	"download_url" : "https://github.com/bootscore/bs-preloader/archive/refs/heads/main.zip",
  	"sections" : {
- 		"description" : "Prevent ctrl/cmd + click links from fade-out, added Update Checker"
+ 		"description" : "Refactored preloader.js, reformat files"
  	}
  }

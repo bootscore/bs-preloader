@@ -1,11 +1,11 @@
 === bS Preloader ===
 
-Contributors: Bastian Kreiter
+Contributors: Bastian Kreiter, Kemal Sulic
 
 Requires at least: 4.5
 Tested up to: 5.8.1
 Requires PHP: 5.6
-Stable tag: 5.0.1.0
+Stable tag: 5.0.1.1
 License: MIT License
 License URI: https://github.com/bootscore/bs-preloader/blob/main/LICENSE
 
@@ -32,6 +32,11 @@ Override plugin template by creating a folder your-theme/bs-preloader-main and p
 
 
 == Changelog ==
+
+    = 5.0.1.1 - November 07 2021 =
+    
+        * [IMPROVEMENT] Refactored preloader.js https://github.com/bootscore/bs-preloader/issues/3
+        * [IMPROVEMENT] Reformat files
 
     = 5.0.1.0 - September 24 2021 =
     
