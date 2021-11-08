@@ -3,6 +3,6 @@
  	"version" : "5.0.1.2",
  	"download_url" : "https://github.com/bootscore/bs-preloader/archive/refs/heads/main.zip",
  	"sections" : {
- 		"description" : "Hotfix: Exclude mailto, tel, .woocommerce-MyAccount-downloads-file and data-fade="false" from fade-in."
+ 		"description" : "Hotfix: Exclude mailto, tel, .woocommerce-MyAccount-downloads-file and data-fade-false from fade-in."
  	}
  }
