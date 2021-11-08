@@ -5,7 +5,7 @@ Contributors: Bastian Kreiter, Kemal Sulic
 Requires at least: 4.5
 Tested up to: 5.8.1
 Requires PHP: 5.6
-Stable tag: 5.0.1.1
+Stable tag: 5.0.1.2
 License: MIT License
 License URI: https://github.com/bootscore/bs-preloader/blob/main/LICENSE
 
@@ -32,6 +32,10 @@ Override plugin template by creating a folder your-theme/bs-preloader-main and p
 
 
 == Changelog ==
+
+    = 5.0.1.2 - November 08 2021 =
+    
+        * [HOTFIX] Exclude :mailto, :tel, .woocommerce-MyAccount-downloads-file and data-fade="false" from fade-in.
 
     = 5.0.1.1 - November 07 2021 =
     
