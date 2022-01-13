@@ -22,5 +22,11 @@ jQuery(document).ready(function ($) {
     $('#status').fadeOut();
     $('#preloader').delay(350).fadeOut('slow');
   }, 1500);
+  
+  // Prevents preloader stucking by press the browser back/forward buttons
+  window.onpagehide = function () {
+    $('#status').fadeOut('fast');
+    $('#preloader').delay(350).fadeOut('slow');
+  };
 
 });
