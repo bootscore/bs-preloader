@@ -3,9 +3,9 @@
 Contributors: Bastian Kreiter, Kemal Sulic
 
 Requires at least: 4.5
-Tested up to: 5.8.1
+Tested up to: 5.8.3
 Requires PHP: 5.6
-Stable tag: 5.0.1.2
+Stable tag: 5.0.1.3
 License: MIT License
 License URI: https://github.com/bootscore/bs-preloader/blob/main/LICENSE
 
@@ -30,6 +30,12 @@ Read documentation https://bootscore.me/documentation/bs-preloader/
 
 Override plugin template by creating a folder your-theme/bs-preloader-main and paste a copy of preloader.php in plugin folder templates.
 
+
+== Changelog ==
+
+    = 5.0.1.3 - January 13 2021 =
+    
+        * [BUGFIX] Prevents preloader stucking by press the browser back/forward buttons https://github.com/bootscore/bs-preloader/issues/6
 
 == Changelog ==
 
