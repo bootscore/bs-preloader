@@ -1,8 +1,8 @@
  {
  	"name" : "bS Preloader",
- 	"version" : "5.0.1.3",
+ 	"version" : "5.0.1.4",
  	"download_url" : "https://github.com/bootscore/bs-preloader/archive/refs/heads/main.zip",
  	"sections" : {
- 		"description" : "Bugfix: Prevents preloader stucking by press the browser back/forward buttons."
+ 		"description" : "Changed class sr-only to visually-hidden"
  	}
  }
