@@ -6,7 +6,7 @@
  *
  * @author 		bootScore
  * @package 	bS Preloader
- * @version     1.0.0
+ * @version     5.0.1.4
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Don't allow direct access
