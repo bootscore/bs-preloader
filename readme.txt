@@ -37,7 +37,7 @@ Override plugin template by creating a folder your-theme/bs-preloader-main and p
     
         * [BUGFIX] Changed class sr-only to visually-hidden (BS5)
 
-    = 5.0.1.3 - January 13 2021 =
+    = 5.0.1.3 - January 13 2022 =
     
         * [BUGFIX] Prevents preloader stucking by press the browser back/forward buttons https://github.com/bootscore/bs-preloader/issues/6
 
