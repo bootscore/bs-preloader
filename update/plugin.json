@@ -1,8 +1,8 @@
  {
  	"name" : "bS Preloader",
- 	"version" : "5.0.1.4",
- 	"download_url" : "https://github.com/bootscore/bs-preloader/archive/refs/heads/main.zip",
+ 	"version" : "5.0.1.5",
+ 	"download_url" : "https://github.com/bootscore/bs-preloader/releases/download/5.0.1.5/bs-preloader-main.zip",
  	"sections" : {
- 		"description" : "Changed class sr-only to visually-hidden"
+ 		"description" : "Reformat files"
  	}
  }
