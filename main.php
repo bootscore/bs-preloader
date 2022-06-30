@@ -11,19 +11,18 @@ License: MIT License
 // Update checker
 require 'update/update-checker.php';
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	'https://bootscore.me/wp-content/plugins/bs-preloader-main/update/plugin.json',
-	__FILE__, //Full path to the main plugin file or functions.php.
-	'bs-preloader-main'
+  'https://bootscore.me/wp-content/plugins/bs-preloader-main/update/plugin.json',
+  __FILE__, //Full path to the main plugin file or functions.php.
+  'bs-preloader-main'
 );
-
 
 // Register Styles and Scripts
 function bs_preloader_scripts() {
 
-	wp_enqueue_script('preloader-js', plugins_url('/js/preloader.js', __FILE__), array('jquery'), '1.0', true);
+  wp_enqueue_script('preloader-js', plugins_url('/js/preloader.js', __FILE__), array('jquery'), '1.0', true);
 
-	wp_register_style('preloader-css', plugins_url('/css/preloader.css', __FILE__));
-	wp_enqueue_style('preloader-css');
+  wp_register_style('preloader-css', plugins_url('/css/preloader.css', __FILE__));
+  wp_enqueue_style('preloader-css');
 }
 
 add_action('wp_enqueue_scripts', 'bs_preloader_scripts');
@@ -47,28 +46,28 @@ add_action('wp_enqueue_scripts', 'bs_preloader_scripts');
  */
 function bs_preloader_locate_template($template_name, $template_path = '', $default_path = '') {
 
-	// Set variable to search in bs-preloader-main folder of theme.
-	if (!$template_path) :
-		$template_path = 'bs-preloader-main/';
-	endif;
+  // Set variable to search in bs-preloader-main folder of theme.
+  if (!$template_path) :
+    $template_path = 'bs-preloader-main/';
+  endif;
 
-	// Set default plugin templates path.
-	if (!$default_path) :
-		$default_path = plugin_dir_path(__FILE__) . 'templates/'; // Path to the template folder
-	endif;
+  // Set default plugin templates path.
+  if (!$default_path) :
+    $default_path = plugin_dir_path(__FILE__) . 'templates/'; // Path to the template folder
+  endif;
 
-	// Search template file in theme folder.
-	$template = locate_template(array(
-		$template_path . $template_name,
-		$template_name
-	));
+  // Search template file in theme folder.
+  $template = locate_template(array(
+    $template_path . $template_name,
+    $template_name
+  ));
 
-	// Get plugins template file.
-	if (!$template) :
-		$template = $default_path . $template_name;
-	endif;
+  // Get plugins template file.
+  if (!$template) :
+    $template = $default_path . $template_name;
+  endif;
 
-	return apply_filters('bs_preloader_locate_template', $template, $template_name, $template_path, $default_path);
+  return apply_filters('bs_preloader_locate_template', $template, $template_name, $template_path, $default_path);
 }
 
 
@@ -88,18 +87,18 @@ function bs_preloader_locate_template($template_name, $template_path = '', $defa
  */
 function bs_preloader_get_template($template_name, $args = array(), $tempate_path = '', $default_path = '') {
 
-	if (is_array($args) && isset($args)) :
-		extract($args);
-	endif;
+  if (is_array($args) && isset($args)) :
+    extract($args);
+  endif;
 
-	$template_file = bs_preloader_locate_template($template_name, $tempate_path, $default_path);
+  $template_file = bs_preloader_locate_template($template_name, $tempate_path, $default_path);
 
-	if (!file_exists($template_file)) :
-		_doing_it_wrong(__FUNCTION__, sprintf('<code>%s</code> does not exist.', $template_file), '1.0.0');
-		return;
-	endif;
+  if (!file_exists($template_file)) :
+    _doing_it_wrong(__FUNCTION__, sprintf('<code>%s</code> does not exist.', $template_file), '1.0.0');
+    return;
+  endif;
 
-	include $template_file;
+  include $template_file;
 }
 
 
@@ -114,6 +113,6 @@ function bs_preloader_get_template($template_name, $args = array(), $tempate_pat
 
 function bs_header_preloader() {
 
-	return bs_preloader_get_template('preloader.php');
+  return bs_preloader_get_template('preloader.php');
 }
 add_action('wp_head', 'bs_header_preloader');
