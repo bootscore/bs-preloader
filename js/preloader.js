@@ -1,32 +1,37 @@
-jQuery(document).ready(function ($) {
+document.addEventListener("DOMContentLoaded", function () {
 
   // Exclude links to fade-in
   let ignore_onbeforeunload = false;
-  $('a[href^=mailto], a[href^=tel], a[data-fade="false"], .woocommerce-MyAccount-downloads-file').on('click', function () {
-    ignore_onbeforeunload = true;
+  const excludedLinks = document.querySelectorAll('a[href^=mailto], a[href^=tel], a[data-fade="false"], .woocommerce-MyAccount-downloads-file');
+  excludedLinks.forEach(function (link) {
+    link.addEventListener('click', function () {
+      ignore_onbeforeunload = true;
+    });
   });
 
   // Preloader
-  $(window).bind('beforeunload', function () {
+  window.addEventListener('beforeunload', function (event) {
     if (!ignore_onbeforeunload) {
-      $("#preloader").fadeIn('fast');
-      $('#status').fadeIn('fast');
+      document.querySelector("#preloader").style.display = 'flex';
+      document.querySelector('#status').style.display = 'flex';
     }
     ignore_onbeforeunload = false;
-  })
-  $(window).on('load', function () {
-    $('#status').fadeOut();
-    $('#preloader').delay(350).fadeOut('slow');
-  })
+  });
+
+  window.addEventListener('load', function () {
+    document.querySelector('#status').style.display = 'none';
+    document.querySelector('#preloader').style.display = 'none';
+  });
+
   setTimeout(function () {
-    $('#status').fadeOut();
-    $('#preloader').delay(350).fadeOut('slow');
+    document.querySelector('#status').style.display = 'none';
+    document.querySelector('#preloader').style.display = 'none';
   }, 1500);
-  
+
   // Prevents preloader stucking by press the browser back/forward buttons
-  window.onpagehide = function () {
-    $('#status').fadeOut('fast');
-    $('#preloader').delay(350).fadeOut('slow');
-  };
+  window.addEventListener('pagehide', function () {
+    document.querySelector('#status').style.display = 'none';
+    document.querySelector('#preloader').style.display = 'none';
+  });
 
 });

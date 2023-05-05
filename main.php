@@ -19,7 +19,7 @@ $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 // Register Styles and Scripts
 function bs_preloader_scripts() {
 
-  wp_enqueue_script('preloader-js', plugins_url('/js/preloader.js', __FILE__), array('jquery'), '1.0', true);
+  wp_enqueue_script('preloader-js', plugins_url('/js/preloader.js', __FILE__), array(), false, true);
 
   wp_register_style('preloader-css', plugins_url('/css/preloader.css', __FILE__));
   wp_enqueue_style('preloader-css');
