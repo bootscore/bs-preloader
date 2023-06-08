@@ -3,9 +3,9 @@
 Contributors: Bastian Kreiter, Kemal Sulic
 
 Requires at least: 4.5
-Tested up to: 6.0
+Tested up to: 6.2.2
 Requires PHP: 5.6
-Stable tag: 5.0.1.5
+Stable tag: 5.1.0
 License: MIT License
 License URI: https://github.com/bootscore/bs-preloader/blob/main/LICENSE
 
@@ -32,6 +32,10 @@ Override plugin template by creating a folder your-theme/bs-preloader-main and p
 
 
 == Changelog ==
+
+    = 5.1.0 - June 08 2022 =
+
+        * [FEATURE] Add composer.json
 
     = 5.0.1.5 - June 30 2022 =
     

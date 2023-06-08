@@ -1,8 +1,8 @@
  {
  	"name" : "bS Preloader",
- 	"version" : "5.0.1.5",
- 	"download_url" : "https://github.com/bootscore/bs-preloader/releases/download/5.0.1.5/bs-preloader-main.zip",
+ 	"version" : "5.1.0",
+ 	"download_url" : "https://github.com/bootscore/bs-preloader/releases/download/v5.1.0/bs-preloader-main.zip",
  	"sections" : {
- 		"description" : "Reformat files"
+ 		"description" : "Add composer.json"
  	}
  }
