@@ -1,0 +1,27 @@
+{
+    "name": "bootscore/bs-preloader",
+    "description": "Preloader for bootScore",
+    "type": "wordpress-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "The bootScore Authors"
+        }
+    ],
+    "readme": "README.md",
+    "homepage": "https://bootscore.me/",
+    "support": {
+      "issues": "https://github.com/bootscore/bs-preloader/issues",
+      "forum": "https://github.com/bootscore/bootscore/discussions",
+      "source": "https://github.com/bootscore/bs-preloader",
+      "docs": "https://bootscore.me/documentation/bs-preloader"
+    },
+    "minimum-stability": "stable",
+    "keywords": [
+      "wordpress",
+      "plugin",
+      "bootscore",
+      "bootstrap",
+      "preloader"
+    ]
+}
