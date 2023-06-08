@@ -33,7 +33,7 @@ Override plugin template by creating a folder your-theme/bs-preloader-main and p
 
 == Changelog ==
 
-    = 5.1.0 - June 08 2022 =
+    = 5.1.0 - June 08 2023 =
 
         * [FEATURE] Add composer.json
 
