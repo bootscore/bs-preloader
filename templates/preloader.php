@@ -5,12 +5,13 @@
  *
  * This template can be overriden by copying this file to your-theme/bs-preloader-main/preloader.php
  *
- * @author 		bootScore
- * @package 	bS Preloader
- * @version   5.0.1.5
+ * @author   bootScore
+ * @package  bS Preloader
+ * @version  5.1.1
  */
 
-if (!defined('ABSPATH')) exit; // Don't allow direct access
+// Exit if accessed directly
+defined( 'ABSPATH' ) || exit;
 
 ?>
 

@@ -3,10 +3,18 @@
 Plugin URI: https://bootscore.me/plugins/bs-preloader/
 Description: This plugin adds a preloader to bootScore
 Version: 5.1.0
+Tested up to: 6.3
+Requires at least: 5.0
+Requires PHP: 5.6
 Author: bootScore
 Author URI: https://bootscore.me
 License: MIT License
 */
+
+
+// Exit if accessed directly
+defined( 'ABSPATH' ) || exit;
+
 
 // Update checker
 require 'update/update-checker.php';
@@ -15,6 +23,7 @@ $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
   __FILE__, //Full path to the main plugin file or functions.php.
   'bs-preloader-main'
 );
+
 
 // Register Styles and Scripts
 function bs_preloader_scripts() {
