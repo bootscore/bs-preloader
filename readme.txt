@@ -2,7 +2,7 @@
 
 Contributors: Bastian Kreiter, Kemal Sulic
 
-Stable tag: 5.1.1
+Stable tag: 5.1.2
 Tested up to: 6.3
 Requires at least: 5.0
 Requires PHP: 5.6
@@ -32,6 +32,10 @@ Override plugin template by creating a folder your-theme/bs-preloader-main and p
 
 
 == Changelog ==
+
+    = 5.1.2 - August 27 2023 =
+
+        * [BUGFIX] Downgrade to update checker v4
 
     = 5.1.1 - August 26 2023 =
 
