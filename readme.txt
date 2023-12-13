@@ -33,80 +33,80 @@ Override plugin template by creating a folder your-theme/bs-preloader-main and p
 
 == Changelog ==
 
-    = 5.1.2 - August 27 2023 =
+= 5.1.2 - August 27 2023 =
 
-        * [BUGFIX] Downgrade to update checker v4
+* [BUGFIX] Downgrade to update checker v4
 
-    = 5.1.1 - August 26 2023 =
+= 5.1.1 - August 26 2023 =
 
-        * [IMPROVEMENT] Deny direct access #12
-        * [UPDATE] Plugin checker 5.2 #13
+* [IMPROVEMENT] Deny direct access #12
+* [UPDATE] Plugin checker 5.2 #13
 
-    = 5.1.0 - June 08 2023 =
+= 5.1.0 - June 08 2023 =
 
-        * [FEATURE] Add composer.json
+* [FEATURE] Add composer.json
 
-    = 5.0.1.5 - June 30 2022 =
-    
-        * [IMPROVEMENT] Reformat files
+= 5.0.1.5 - June 30 2022 =
 
-    = 5.0.1.4 - January 18 2022 =
-    
-        * [BUGFIX] Changed class sr-only to visually-hidden (BS5)
+* [IMPROVEMENT] Reformat files
 
-    = 5.0.1.3 - January 13 2022 =
-    
-        * [BUGFIX] Prevents preloader stucking by press the browser back/forward buttons https://github.com/bootscore/bs-preloader/issues/6
+= 5.0.1.4 - January 18 2022 =
 
-    = 5.0.1.2 - November 08 2021 =
-    
-        * [HOTFIX] Exclude :mailto, :tel, .woocommerce-MyAccount-downloads-file and data-fade="false" from fade-in.
+* [BUGFIX] Changed class sr-only to visually-hidden (BS5)
 
-    = 5.0.1.1 - November 07 2021 =
-    
-        * [IMPROVEMENT] Refactored preloader.js https://github.com/bootscore/bs-preloader/issues/3
-        * [IMPROVEMENT] Reformat files
+= 5.0.1.3 - January 13 2022 =
 
-    = 5.0.1.0 - September 24 2021 =
-    
-        * [BUGFIX] Prevent ctrl/cmd + click links from fade-in
-        * [NEW] Added Update Checker
+* [BUGFIX] Prevents preloader stucking by press the browser back/forward buttons https://github.com/bootscore/bs-preloader/issues/6
 
-    = 5.0.0.8 - August 24 2021 =
-    
-        * [BUGFIX] Exclude .comments-link from fade-out
-        * [BUGFIX] Exclude .woocommerce-MyAccount-downloads-file from fade-out
+= 5.0.1.2 - November 08 2021 =
 
-    = 5.0.0.7 - May 30 2021 =
-    
-        * [BUGFIX] Exclude .dropdown-toggle from fade-out
+* [HOTFIX] Exclude :mailto, :tel, .woocommerce-MyAccount-downloads-file and data-fade="false" from fade-in.
 
-    = 5.0.0.6 - May 28 2021 =
-    
-        * [IMPROVEMENT] Hide on Internet Explorer
-        * [IMPROVEMENT] Fade out effect on click <a>...</a> for smooth page transition (works not on Mac Safari and all iOS Browsers)
+= 5.0.1.1 - November 07 2021 =
 
-    = 5.0.0.5 - March 08 2021 =
-    
-        * [IMPROVEMENT] Uses zi-1070 class of parent theme instead of own CSS (needs at least bootScore 5.0.0.5)
+* [IMPROVEMENT] Refactored preloader.js https://github.com/bootscore/bs-preloader/issues/3
+* [IMPROVEMENT] Reformat files
 
-    = 5.0.0.4 - March 05 2021 =
-    
-        * [IMPROVEMENT] Uses Bootstrap positioning classes instead of own CSS
+= 5.0.1.0 - September 24 2021 =
 
-    = 5.0.0.3 - February 11 2021 =
-    
-        * [SEO] Load CSS in external file again
+* [BUGFIX] Prevent ctrl/cmd + click links from fade-in
+* [NEW] Added Update Checker
 
-    = 5.0.0.2 - February 10 2021 =
-    
-        * [NEW] Override template in child-theme 
+= 5.0.0.8 - August 24 2021 =
 
-    = 5.0.0.1 - February 09 2021 =
-    
-        * [SEO] Load CSS inline to reduce file request
-        * [SEO] Load preloader.js in footer
+* [BUGFIX] Exclude .comments-link from fade-out
+* [BUGFIX] Exclude .woocommerce-MyAccount-downloads-file from fade-out
 
-    = 5.0.0 - December 30 2020 =
-    
-        * Initial release
+= 5.0.0.7 - May 30 2021 =
+
+* [BUGFIX] Exclude .dropdown-toggle from fade-out
+
+= 5.0.0.6 - May 28 2021 =
+
+* [IMPROVEMENT] Hide on Internet Explorer
+* [IMPROVEMENT] Fade out effect on click <a>...</a> for smooth page transition (works not on Mac Safari and all iOS Browsers)
+
+= 5.0.0.5 - March 08 2021 =
+
+* [IMPROVEMENT] Uses zi-1070 class of parent theme instead of own CSS (needs at least bootScore 5.0.0.5)
+
+= 5.0.0.4 - March 05 2021 =
+
+* [IMPROVEMENT] Uses Bootstrap positioning classes instead of own CSS
+
+= 5.0.0.3 - February 11 2021 =
+
+* [SEO] Load CSS in external file again
+
+= 5.0.0.2 - February 10 2021 =
+
+* [NEW] Override template in child-theme 
+
+= 5.0.0.1 - February 09 2021 =
+
+* [SEO] Load CSS inline to reduce file request
+* [SEO] Load preloader.js in footer
+
+= 5.0.0 - December 30 2020 =
+
+* Initial release
