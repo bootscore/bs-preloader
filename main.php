@@ -16,16 +16,25 @@ License: MIT License
 defined( 'ABSPATH' ) || exit;
 
 
-// Update checker
-require 'update/update-checker.php';
-$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-  'https://bootscore.me/wp-content/plugins/bs-preloader-main/update/plugin.json',
-  __FILE__, //Full path to the main plugin file or functions.php.
-  'bs-preloader-main'
+/**
+ * Update checker
+ */
+require 'update/plugin-update-checker.php';
+use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+
+$myUpdateChecker = PucFactory::buildUpdateChecker(
+	'https://github.com/bootscore/bs-preloader/',
+	__FILE__,
+	'bs-preloader'
 );
 
+//Set the branch that contains the stable release.
+$myUpdateChecker->setBranch('main');
 
-// Register Styles and Scripts
+
+/**
+ * Register Styles and Scripts
+ */
 function bs_preloader_scripts() {
 
   wp_enqueue_script('preloader-js', plugins_url('/js/preloader.js', __FILE__), array('jquery'), '1.0', true);
