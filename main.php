@@ -42,11 +42,12 @@ add_action('wp_enqueue_scripts', 'bs_preloader_scripts');
  *
  * Locate the called template.
  * Search Order:
- * 1. /themes/theme/bs-preloader-main/$template_name
- * 2. /themes/theme/$template_name
- * 3. /plugins/bs-preloader-main/templates/$template_name.
+ * 1. /themes/theme/bs-preloader/$template_name
+ * 2. /themes/theme/bs-preloader-main/$template_name
+ * 3. /themes/theme/$template_name
+ * 4. /plugins/bs-preloader-main/templates/$template_name.
  *
- * @since 1.0.0
+ * @since 5.2.0
  *
  * @param 	string 	$template_name			Template to load.
  * @param 	string 	$string $template_path	Path to templates.
@@ -55,28 +56,26 @@ add_action('wp_enqueue_scripts', 'bs_preloader_scripts');
  */
 function bs_preloader_locate_template($template_name, $template_path = '', $default_path = '') {
 
-  // Set variable to search in bs-preloader-main folder of theme.
-  if (!$template_path) :
-    $template_path = 'bs-preloader-main/';
-  endif;
-
   // Set default plugin templates path.
   if (!$default_path) :
     $default_path = plugin_dir_path(__FILE__) . 'templates/'; // Path to the template folder
   endif;
 
-  // Search template file in theme folder.
-  $template = locate_template(array(
-    $template_path . $template_name,
-    $template_name
-  ));
+  // Check if 'bs-preloader/' exists in the theme.
+  $bs_preloader_path = get_theme_file_path('bs-preloader/' . $template_name);
+  if (file_exists($bs_preloader_path)) {
+    return $bs_preloader_path;
+  }
 
-  // Get plugins template file.
-  if (!$template) :
-    $template = $default_path . $template_name;
-  endif;
+  // Check if 'bs-preloader-main/' exists in the theme.
+  // Fallback for existing 'bs-preloader-main/' folders in child theme
+  $bs_preloader_main_path = get_theme_file_path('bs-preloader-main/' . $template_name);
+  if (file_exists($bs_preloader_main_path)) {
+    return $bs_preloader_main_path;
+  }
 
-  return apply_filters('bs_preloader_locate_template', $template, $template_name, $template_path, $default_path);
+  // If neither 'bs-preloader/' nor 'bs-preloader-main/' exists, return the default path.
+  return $default_path . $template_name;
 }
 
 
