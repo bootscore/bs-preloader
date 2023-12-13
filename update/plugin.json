@@ -1,8 +1,0 @@
- {
- 	"name" : "bS Preloader",
- 	"version" : "5.1.2",
- 	"download_url" : "https://github.com/bootscore/bs-preloader/releases/download/v5.1.2/bs-preloader-main.zip",
- 	"sections" : {
- 		"description" : "Downgrade to update checker v4"
- 	}
- }
