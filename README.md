@@ -1,5 +1,7 @@
 # bS Preloader
 
+[![Packagist Prerelease](https://img.shields.io/packagist/vpre/bootscore/bs-preloder?logo=packagist&logoColor=fff)](https://packagist.org/packages/bootscore/bs-preloader)
+
 WordPress plugin to show a preloader in Bootscore theme. Content will be shown when the page is fully loaded. When clicking a link (not # and external url), the preloader fades in again (not working on Mac Safari and all iOS Browsers) to get a smooth page transition.
 
 - Demo: https://bootscore.me/
