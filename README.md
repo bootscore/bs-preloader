@@ -1,6 +1,6 @@
 # bS Preloader
 
-WordPress plugin to show a preloader in bootScore theme. Content will be shown when the page is fully loaded. When clicking a link (not # and external url), the preloader fades in again (not working on Mac Safari and all iOS Browsers) to get a smooth page transition.
+WordPress plugin to show a preloader in Bootscore theme. Content will be shown when the page is fully loaded. When clicking a link (not # and external url), the preloader fades in again (not working on Mac Safari and all iOS Browsers) to get a smooth page transition.
 
 Demo: https://bootscore.me/
 
@@ -15,16 +15,15 @@ Documentation: https://bootscore.me/documentation/bs-preloader/
 
 ## Overriding templates via theme
 
-Template files can be found within the /bs-preloader-main/templates/ plugin directory.
+Template files can be found within the `/bs-preloader-main/templates/` plugin directory.
 
-Edit files in an upgrade-safe way using overrides. Copy the template into a directory within your theme named /bs-preloader-main keeping the same file structure but removing the /templates/ subdirectory. Path must be `/your-theme/bs-preloader-main/[file].php`.
+Edit files in an upgrade-safe way using overrides. Copy the template into a directory within your theme named `/bs-preloader` keeping the same file structure but removing the `/templates/` subdirectory. Path must be `/your-theme/bs-preloader/[file].php`.
 
 The copied file will now override the bS Preloader template file. Change spinner, classes or HTML as you want.
 
 ### Templates that can be overwritten:
 
-- preloader.php
-
+- `preloader.php`
 
 ## License & Credits
 
