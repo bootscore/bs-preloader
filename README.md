@@ -2,13 +2,12 @@
 
 WordPress plugin to show a preloader in Bootscore theme. Content will be shown when the page is fully loaded. When clicking a link (not # and external url), the preloader fades in again (not working on Mac Safari and all iOS Browsers) to get a smooth page transition.
 
-Demo: https://bootscore.me/
-
-Documentation: https://bootscore.me/documentation/bs-preloader/
+- Demo: https://bootscore.me/
+- Documentation: https://bootscore.me/documentation/bs-preloader/
 
 ## Installation
 
-1. Download the zip file right here by pressing the green `code` button above. 
+1. Download latest release [bs-preloader-main.zip](https://github.com/bootscore/bs-preloader/releases/latest/download/bs-preloader-main.zip). 
 2. In your admin panel, go to Plugins > and click the Add New button.
 3. Click Upload Plugin and Choose File, then select the Plugin's .zip file. Click Install Now.
 4. Click Activate to use your new Plugin right away.
