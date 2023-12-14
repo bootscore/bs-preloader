@@ -5,7 +5,7 @@
  *
  * This template can be overriden by copying this file to your-theme/bs-preloader-main/preloader.php
  *
- * @author   bootScore
+ * @author   Bootscore
  * @package  bS Preloader
  * @version  5.1.1
  */

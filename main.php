@@ -1,12 +1,12 @@
 <?php
 /*Plugin Name: bS Preloader
 Plugin URI: https://bootscore.me/plugins/bs-preloader/
-Description: This plugin adds a preloader to bootScore
-Version: 5.1.2
-Tested up to: 6.3
+Description: Plugin adds a preloader to Bootscore theme. <a href="https://bootscore.me/documentation/bs-preloader/">Documentation</a> | <a href="https://bootscore.me/documentation/bs-preloader/#Changelog">Changelog</a>
+Version: 5.2.0
+Tested up to: 6.4.2
 Requires at least: 5.0
-Requires PHP: 5.6
-Author: bootScore
+Requires PHP: 7.4
+Author: Bootscore
 Author URI: https://bootscore.me
 License: MIT License
 */

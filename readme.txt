@@ -2,19 +2,19 @@
 
 Contributors: Bastian Kreiter, Kemal Sulic
 
-Stable tag: 5.1.2
-Tested up to: 6.3
+Stable tag: 5.2.0
+Tested up to: 6.4.2
 Requires at least: 5.0
-Requires PHP: 5.6
+Requires PHP: 7.4
 License: MIT License
 License URI: https://github.com/bootscore/bs-preloader/blob/main/LICENSE
 
-This plugin adds a preloader to bootScore theme, Copyright 2021 - 2023 The bootScore Contributors.
+Plugin adds a preloader to Bootscore theme, Copyright 2021 - 2023 The Bootscore Contributors.
 
 
 == Credits ==
 
-    - Update Checker https://github.com/YahnisElsts/plugin-update-checker/blob/master/license.txt, Copyright 2017, Jānis Elsts
+- Update Checker https://github.com/YahnisElsts/plugin-update-checker/blob/master/license.txt, Copyright 2017, Jānis Elsts
 
 
 == Installation ==
@@ -32,6 +32,11 @@ Override plugin template by creating a folder your-theme/bs-preloader-main and p
 
 
 == Changelog ==
+
+= 5.2.0 - December 14 2023 =
+
+* [FEATURE] Rewrite locate template script to skip -main suffix in child folder
+* [UPDATE] Update checker v5
 
 = 5.1.2 - August 27 2023 =
 
