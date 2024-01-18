@@ -7,7 +7,7 @@
  *
  * @author   Bootscore
  * @package  bs Preloader
- * @version  5.2.1
+ * @version  5.3.0
  */
 
 // Exit if accessed directly

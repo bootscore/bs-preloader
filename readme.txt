@@ -1,15 +1,15 @@
-=== bS Preloader ===
+=== bs Preloader ===
 
 Contributors: Bastian Kreiter, Kemal Sulic
 
-Stable tag: 5.2.0
+Stable tag: 5.3.0
 Tested up to: 6.4.2
 Requires at least: 5.0
 Requires PHP: 7.4
 License: MIT License
 License URI: https://github.com/bootscore/bs-preloader/blob/main/LICENSE
 
-Plugin adds a preloader to Bootscore theme, Copyright 2021 - 2023 The Bootscore Contributors.
+Plugin adds a preloader to Bootscore theme, Copyright 2021 - 2024 The Bootscore Contributors.
 
 
 == Credits ==
@@ -32,6 +32,13 @@ Override plugin template by creating a folder your-theme/bs-preloader-main and p
 
 
 == Changelog ==
+
+= 5.3.0 - January 18 2023 =
+
+* [IMPROVEMENT] Added bg-body class to #preloader 7214a63 (@crftwrk)
+* [IMPROVEMENT] Removed -main branch suffix from plugin's folder. This does not affect existing bs-preloader-main installations.
+* [REMOVED] Hide preloader on IE10+ 7bb956c (@crftwrk)
+* [UPDATE] Update checker 5.3 b580ec7 (@crftwrk)
 
 = 5.2.0 - December 14 2023 =
 
