@@ -33,6 +33,13 @@ Override plugin template by creating a folder your-theme/bs-preloader-main and p
 
 == Changelog ==
 
+= 5.3.0 - January 18 2023 =
+
+* [IMPROVEMENT] Added bg-body class to #preloader 7214a63 (@crftwrk)
+* [IMPROVEMENT] Removed -main branch suffix from plugin's folder. This does not affect existing bs-preloader-main installations.
+* [REMOVED] Hide preloader on IE10+ 7bb956c (@crftwrk)
+* [UPDATE] Update checker 5.3 b580ec7 (@crftwrk)
+
 = 5.2.0 - December 14 2023 =
 
 * [FEATURE] Rewrite locate template script to skip -main suffix in child folder
