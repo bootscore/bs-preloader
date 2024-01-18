@@ -1,15 +1,15 @@
-=== bS Preloader ===
+=== bs Preloader ===
 
 Contributors: Bastian Kreiter, Kemal Sulic
 
-Stable tag: 5.2.0
+Stable tag: 5.3.0
 Tested up to: 6.4.2
 Requires at least: 5.0
 Requires PHP: 7.4
 License: MIT License
 License URI: https://github.com/bootscore/bs-preloader/blob/main/LICENSE
 
-Plugin adds a preloader to Bootscore theme, Copyright 2021 - 2023 The Bootscore Contributors.
+Plugin adds a preloader to Bootscore theme, Copyright 2021 - 2024 The Bootscore Contributors.
 
 
 == Credits ==
