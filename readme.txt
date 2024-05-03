@@ -2,8 +2,8 @@
 
 Contributors: Bastian Kreiter, Kemal Sulic
 
-Stable tag: 5.3.1
-Tested up to: 6.4.3
+Stable tag: 5.4.0
+Tested up to: 6.5.2
 Requires at least: 5.0
 Requires PHP: 7.4
 License: MIT License
@@ -33,7 +33,13 @@ Override plugin template by creating a folder your-theme/bs-preloader-main and p
 
 == Changelog ==
 
-= 5.3.1 - March 28 2023 =
+= 5.4.0 - May 03 2024 =
+
+#### Feature
+
+* Added a filter to loading spinner
+
+= 5.3.1 - March 28 2024 =
 
 #### Improvement
 
@@ -47,7 +53,7 @@ Override plugin template by creating a folder your-theme/bs-preloader-main and p
 
 #### Improvement
 
-* Added bg-body class to #preloader 7214a63 (@crftwrk)
+* Added bg-body class to #preloader
 * Removed -main branch suffix from plugin's folder. This does not affect existing bs-preloader-main installations.
 
 #### Removed
