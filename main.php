@@ -132,4 +132,4 @@ function bs_header_preloader() {
 
   return bs_preloader_get_template('preloader.php');
 }
-add_action('wp_head', 'bs_header_preloader');
+add_action('wp_head', 'bs_header_preloader', 99);
