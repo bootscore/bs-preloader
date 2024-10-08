@@ -125,11 +125,14 @@ function bs_preloader_get_template($template_name, $args = array(), $tempate_pat
  * The preloader will output the template
  * file from the /templates.
  *
- * @since 1.0.0
+ * @since 5.5.0
  */
 
 function bs_header_preloader() {
 
   return bs_preloader_get_template('preloader.php');
 }
-add_action('wp_head', 'bs_header_preloader');
+// Priority lower than 99 will remove the favicon if this is selected via the Customizer
+// See https://github.com/bootscore/bs-preloader/issues/22
+// See https://github.com/bootscore/bs-preloader/pull/24
+add_action('wp_head', 'bs_header_preloader', 99);
