@@ -1,8 +1,8 @@
 === bs Preloader ===
 
-Contributors: Bastian Kreiter, Kemal Sulic
+Contributors: Bastian Kreiter, Kemal Sulic, Murilo Carvalho
 
-Stable tag: 5.4.1
+Stable tag: 5.5.0
 Tested up to: 6.6
 Requires at least: 5.0
 Requires PHP: 7.4
@@ -32,6 +32,25 @@ Override plugin template by creating a folder your-theme/bs-preloader-main and p
 
 
 == Changelog ==
+
+= 5.5.0 - October 08 2024 =
+
+### Features
+
+* Added a filter to preloader bg and added a hook
+
+### Improvements
+
+* Added icon.png
+* Renamed filter `bootscore/class/preloader_spinner` into `bootscore/class/preloader/spinner`
+
+### Bugfixes
+
+* Favicon disappears on non-admin pages if favicon is selected via the Customizer
+
+### Templates changed
+
+* `preloader.php`
 
 = 5.4.1 - August 31 2024 =
 
