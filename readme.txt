@@ -35,20 +35,20 @@ Override plugin template by creating a folder your-theme/bs-preloader-main and p
 
 = 5.5.0 - October 08 2024 =
 
-### Features
+#### Features
 
 * Added a filter to preloader bg and added a hook
 
-### Improvements
+#### Improvements
 
 * Added icon.png
 * Renamed filter `bootscore/class/preloader_spinner` into `bootscore/class/preloader/spinner`
 
-### Bugfixes
+#### Bugfixes
 
 * Favicon disappears on non-admin pages if favicon is selected via the Customizer
 
-### Templates changed
+#### Templates changed
 
 * `preloader.php`
 
