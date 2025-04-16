@@ -2,8 +2,8 @@
 /*Plugin Name: bs Preloader
 Plugin URI: https://bootscore.me/plugins/bs-preloader/
 Description: Plugin adds a preloader to Bootscore theme.
-Version: 5.5.0
-Tested up to: 6.6
+Version: 5.5.1
+Tested up to: 6.8
 Requires at least: 5.0
 Requires PHP: 7.4
 Author: Bootscore
@@ -36,11 +36,19 @@ $myUpdateChecker->setBranch('main');
  * Register Styles and Scripts
  */
 function bs_preloader_scripts() {
+  // File paths
+  $script_file = plugin_dir_path(__FILE__) . 'assets/js/preloader.js';
+  $style_file  = plugin_dir_path(__FILE__) . 'assets/css/preloader.css';
 
-  wp_enqueue_script('preloader-js', plugins_url('/assets/js/preloader.js', __FILE__), array('jquery'), '1.0', true);
+  // Timestamps as version numbers
+  $script_ver = file_exists($script_file) ? date('YmdHi', filemtime($script_file)) : false;
+  $style_ver  = file_exists($style_file) ? date('YmdHi', filemtime($style_file)) : false;
 
-  wp_register_style('preloader-css', plugins_url('/assets/css/preloader.css', __FILE__));
-  wp_enqueue_style('preloader-css');
+  // Enqueue script
+  wp_enqueue_script('preloader-js', plugins_url('/assets/js/preloader.js', __FILE__), ['jquery'], $script_ver, true);
+
+  // Enqueue style
+  wp_enqueue_style('preloader-css', plugins_url('/assets/css/preloader.css', __FILE__), [], $style_ver);
 }
 
 add_action('wp_enqueue_scripts', 'bs_preloader_scripts');
