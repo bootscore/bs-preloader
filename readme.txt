@@ -3,7 +3,7 @@
 Contributors: Bastian Kreiter, Kemal Sulic, Murilo Carvalho
 
 Stable tag: 5.5.1
-Tested up to: 6.8
+Tested up to: 6.9
 Requires at least: 5.0
 Requires PHP: 7.4
 License: MIT License
