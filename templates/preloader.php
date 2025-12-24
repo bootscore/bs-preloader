@@ -18,6 +18,6 @@ defined( 'ABSPATH' ) || exit;
 <div id="preloader" class="<?= esc_attr( apply_filters('bootscore/class/preloader/bg', 'bg-body align-items-center justify-content-center position-fixed top-0 end-0 bottom-0 start-0 zi-1070') ); ?>">
   <div id="status" class="<?= esc_attr( apply_filters('bootscore/class/preloader/spinner', 'spinner-border text-primary') ); ?>" role="status">
     <?php do_action( 'bootscore_preloader_status' ); ?>
-    <span class="visually-hidden">Loading...</span>
+    <span class="visually-hidden"><?php _e('Loading...', 'bootscore'); ?></span>
   </div>
 </div>
