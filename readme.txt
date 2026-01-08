@@ -2,7 +2,7 @@
 
 Contributors: Bastian Kreiter, Kemal Sulic, Murilo Carvalho
 
-Stable tag: 5.5.1
+Stable tag: 5.5.2
 Tested up to: 6.9
 Requires at least: 5.0
 Requires PHP: 7.4
@@ -32,6 +32,18 @@ Override plugin template by creating a folder your-theme/bs-preloader-main and p
 
 
 == Changelog ==
+
+= 5.5.2 - January 08 2026 =
+
+#### Improvements
+
+- Restructure plugin files and escape HTML in filters
+- `Loading...` string is now translation-ready
+
+#### Updates
+
+- Plugin Update Checker v5.6
+- Tested up to WP 6.9
 
 = 5.5.1 - April 16 2025 =
 
