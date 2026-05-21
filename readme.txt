@@ -2,8 +2,8 @@
 
 Contributors: Bastian Kreiter, Kemal Sulic, Murilo Carvalho
 
-Stable tag: 5.5.2
-Tested up to: 6.9
+Stable tag: 5.5.3
+Tested up to: 7.0
 Requires at least: 5.0
 Requires PHP: 7.4
 License: MIT License
@@ -32,6 +32,10 @@ Override plugin template by creating a folder your-theme/bs-preloader-main and p
 
 
 == Changelog ==
+
+= 5.5.3 - May 21 2026 =
+
+- Tested up to WP 7.0
 
 = 5.5.2 - January 08 2026 =
 
