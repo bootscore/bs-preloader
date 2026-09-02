@@ -1,4 +1,4 @@
+
 #preloader {
   display: flex;
-  background-color: inherit; /* Fallback for existing overrides in child. Replaced by bg-body class */
 }
