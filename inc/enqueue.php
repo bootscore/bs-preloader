@@ -5,7 +5,7 @@
  *
  * @author   Bootscore
  * @package  bs Preloader
- * @version  5.5.2
+ * @version  6.0.0
  */
 
 
@@ -34,7 +34,7 @@ function bs_preloader_scripts() {
   wp_enqueue_script(
     'preloader-js',
     $plugin_url . 'assets/js/preloader.js',
-    ['jquery'],
+    [],
     $script_ver,
     true
   );

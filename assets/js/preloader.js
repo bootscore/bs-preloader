@@ -1,32 +1,62 @@
-jQuery(document).ready(function ($) {
+document.addEventListener('DOMContentLoaded', function () {
 
   // Exclude links to fade-in
   let ignore_onbeforeunload = false;
-  $('a[href^=mailto], a[href^=tel], a[data-fade="false"], .woocommerce-MyAccount-downloads-file').on('click', function () {
-    ignore_onbeforeunload = true;
-  });
+  document.querySelectorAll('a[href^="mailto"], a[href^="tel"], a[data-fade="false"], .woocommerce-MyAccount-downloads-file')
+    .forEach(function (el) {
+      el.addEventListener('click', function () {
+        ignore_onbeforeunload = true;
+      });
+    });
+
+  // Fade helpers (CSS-transition based)
+  function fadeIn(el, duration = 200) {
+    if (!el) return;
+    el.style.transition = `opacity ${duration}ms`;
+    el.style.opacity = 0;
+    el.style.display = '';
+    requestAnimationFrame(() => {
+      el.style.opacity = 1;
+    });
+  }
+
+  function fadeOut(el, duration = 400, delay = 0) {
+    if (!el) return;
+    setTimeout(() => {
+      el.style.transition = `opacity ${duration}ms`;
+      el.style.opacity = 0;
+      setTimeout(() => {
+        el.style.display = 'none';
+      }, duration);
+    }, delay);
+  }
+
+  const preloader = document.getElementById('preloader');
+  const status = document.getElementById('status');
 
   // Preloader
-  $(window).bind('beforeunload', function () {
+  window.addEventListener('beforeunload', function () {
     if (!ignore_onbeforeunload) {
-      $("#preloader").fadeIn('fast');
-      $('#status').fadeIn('fast');
+      fadeIn(preloader, 200);
+      fadeIn(status, 200);
     }
     ignore_onbeforeunload = false;
-  })
-  $(window).on('load', function () {
-    $('#status').fadeOut();
-    $('#preloader').delay(350).fadeOut('slow');
-  })
+  });
+
+  window.addEventListener('load', function () {
+    fadeOut(status);
+    fadeOut(preloader, 400, 350);
+  });
+
   setTimeout(function () {
-    $('#status').fadeOut();
-    $('#preloader').delay(350).fadeOut('slow');
+    fadeOut(status);
+    fadeOut(preloader, 400, 350);
   }, 1500);
-  
-  // Prevents preloader stucking by press the browser back/forward buttons
+
+  // Prevents preloader stucking by pressing the browser back/forward buttons
   window.onpagehide = function () {
-    $('#status').fadeOut('fast');
-    $('#preloader').delay(350).fadeOut('slow');
+    fadeOut(status, 200);
+    fadeOut(preloader, 400, 350);
   };
 
 });
