@@ -10,11 +10,12 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
   // Fade helpers (CSS-transition based)
+  // Toggle .d-none instead of inline display, so the element keeps its display class (d-flex, …)
   function fadeIn(el, duration = 200) {
     if (!el) return;
     el.style.transition = `opacity ${duration}ms`;
     el.style.opacity = 0;
-    el.style.display = '';
+    el.classList.remove('d-none');
     requestAnimationFrame(() => {
       el.style.opacity = 1;
     });
@@ -26,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
       el.style.transition = `opacity ${duration}ms`;
       el.style.opacity = 0;
       setTimeout(() => {
-        el.style.display = 'none';
+        el.classList.add('d-none');
       }, duration);
     }, delay);
   }
