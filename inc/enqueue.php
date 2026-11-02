@@ -23,7 +23,7 @@ function bs_preloader_scripts() {
   $plugin_url = plugin_dir_url( dirname(__FILE__) );
 
   // File paths
-  $script_file = $plugin_dir . 'assets/js/preloader.js';
+  $script_file = $plugin_dir . 'assets/js/preloader.min.js';
 
   // Timestamps as version numbers
   $script_ver = file_exists($script_file) ? date('YmdHi', filemtime($script_file)) : false;
@@ -31,7 +31,7 @@ function bs_preloader_scripts() {
   // Enqueue script
   wp_enqueue_script(
     'preloader-js',
-    $plugin_url . 'assets/js/preloader.js',
+    $plugin_url . 'assets/js/preloader.min.js',
     [],
     $script_ver,
     true
