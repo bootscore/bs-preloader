@@ -5,7 +5,7 @@
  * https://github.com/crftwrk/compile-plugin-assets-to-bootscore
  *
  * @author  Bootscore
- * @package bs Cookie Settings
+ * @package bs Preloader
  * @version 6.0.0
  */
 
