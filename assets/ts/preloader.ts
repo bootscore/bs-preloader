@@ -1,3 +1,10 @@
+/*!
+ * bs Preloader
+ *
+ * @version 6.0.0
+ *
+ */
+
 document.addEventListener('DOMContentLoaded', function () {
 
   // Exclude links to fade-in

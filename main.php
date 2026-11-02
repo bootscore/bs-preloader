@@ -17,23 +17,9 @@ defined( 'ABSPATH' ) || exit;
 
 
 /**
- * Update checker
- */
-require 'inc/update/plugin-update-checker.php';
-use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
-
-$myUpdateChecker = PucFactory::buildUpdateChecker(
-	'https://github.com/bootscore/bs-preloader/',
-	__FILE__,
-	'bs-preloader'
-);
-
-//Set the branch that contains the stable release.
-$myUpdateChecker->setBranch('main');
-
-
-/**
  * Load required files
  */
-require_once plugin_dir_path( __FILE__ ) . 'inc/locate-template.php'; // Template overrides
-require_once plugin_dir_path( __FILE__ ) . 'inc/enqueue.php';         // Scripts & styles
+require_once plugin_dir_path(__FILE__) . 'inc/preloader.php';       // Get the template
+require_once plugin_dir_path(__FILE__) . 'inc/enqueue.php';         // Scripts & styles
+require_once plugin_dir_path(__FILE__) . 'inc/updater-config.php';  // Bootscore Updater
+//require_once plugin_dir_path(__FILE__) . 'inc/dev.php';             // Compile assets to theme
