@@ -2,10 +2,10 @@
 
 Contributors: Bastian Kreiter, Kemal Sulic, Murilo Carvalho
 
-Stable tag: 5.5.3
-Tested up to: 7.0
-Requires at least: 5.0
-Requires PHP: 7.4
+Stable tag: 6.0.0
+Tested up to: 7.1
+Requires at least: 7.0
+Requires PHP: 8.1
 License: MIT License
 License URI: https://github.com/bootscore/bs-preloader/blob/main/LICENSE
 
