@@ -1,6 +1,6 @@
 <?php
 /*Plugin Name: bs Preloader
-Plugin URI: https://bootscore.me/plugins/documentation/bs-preloader/
+Plugin URI: https://bootscore.me/documentation/plugins/bs-preloader/
 Description: Plugin adds a preloader to Bootscore theme.
 Version: 6.0.0
 Tested up to: 7.1
