@@ -26,7 +26,7 @@ Plugin adds a preloader to Bootscore theme, Copyright 2021 - 2024 The Bootscore 
 
 == Usage ==
 
-Read documentation https://bootscore.me/documentation/bs-preloader/
+Read documentation https://bootscore.me/documentation/plugins/bs-preloader/
 
 Override plugin template by creating a folder your-theme/bs-preloader-main and paste a copy of preloader.php in plugin folder templates.
 
